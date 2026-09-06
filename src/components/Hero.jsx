@@ -1,31 +1,33 @@
-import { profile, heroCopy } from '../data/config'
 import CodeCard from './CodeCard'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section className="hero" id="top">
       <p
         className="hero-eyebrow animate__animated animate__fadeInDown"
         style={{ animationDelay: '0.1s' }}
       >
-        {heroCopy.eyebrow}
+        {t.hero.eyebrow}
       </p>
 
       <h1
         className="hero-heading animate__animated animate__fadeInUp"
         style={{ animationDelay: '0.25s' }}
       >
-        {heroCopy.headingLine1}
+        {t.hero.headingLine1}
         <br />
-        {heroCopy.headingLine2}
-        <em>{heroCopy.headingHighlight}</em>
+        {t.hero.headingLine2}
+        <em>{t.hero.headingHighlight}</em>
       </h1>
 
       <p
         className="hero-tagline animate__animated animate__fadeInUp"
         style={{ animationDelay: '0.5s' }}
       >
-        {profile.tagline}
+        {t.hero.tagline}
       </p>
 
       <div
@@ -36,10 +38,10 @@ export default function Hero() {
           className="btn btn-primary animate__animated animate__pulse animate__infinite animate__slower"
           href="#projects"
         >
-          Ver proyectos <span className="btn-arrow">→</span>
+          {t.hero.ctaProjects} <span className="btn-arrow">→</span>
         </a>
         <a className="btn btn-ghost" href="#contact">
-          Contactar
+          {t.hero.ctaContact}
         </a>
       </div>
 

@@ -1,16 +1,17 @@
 import { profile, socials } from '../data/config'
 import Reveal from './Reveal'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function Contact() {
+  const { t } = useLanguage()
+
   return (
     <section className="contact" id="contact">
       <Reveal as="h2" className="section-title" animation="bounceIn">
-        Contáctame <span className="highlight">.</span>
+        {t.contact.heading} <span className="highlight">.</span>
       </Reveal>
       <Reveal delay={0.15}>
-        <p className="contact-text">
-          ¿Tienes un proyecto en mente o quieres platicar? Escríbeme, con gusto respondo.
-        </p>
+        <p className="contact-text">{t.contact.text}</p>
       </Reveal>
       <Reveal delay={0.3} animation="zoomIn">
         <a
@@ -19,7 +20,7 @@ export default function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          Enviar Email
+          {t.contact.cta}
         </a>
       </Reveal>
       <Reveal delay={0.45}>

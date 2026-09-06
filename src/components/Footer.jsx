@@ -1,7 +1,9 @@
 import { profile, socials } from '../data/config'
 import Reveal from './Reveal'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function Footer() {
+  const { t } = useLanguage()
   const year = new Date().getFullYear()
 
   return (
@@ -14,7 +16,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="footer-copy">
-        © {year} {profile.name}. Hecho con amor &lt;3
+        © {year} {profile.name}. {t.footer.madeWith} &lt;3
       </p>
     </Reveal>
   )

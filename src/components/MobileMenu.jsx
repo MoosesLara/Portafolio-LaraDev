@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function MobileMenu({ links }) {
+  const { t } = useLanguage()
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function MobileMenu({ links }) {
       <button
         type="button"
         className={'hamburger' + (open ? ' is-open' : '')}
-        aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+        aria-label={open ? t.mobileMenu.close : t.mobileMenu.open}
         aria-expanded={open}
         aria-controls="mobile-menu-panel"
         onClick={() => setOpen((o) => !o)}
@@ -57,7 +59,7 @@ export default function MobileMenu({ links }) {
               </a>
             ))}
             <a className="mobile-menu-cta" href="#contact" onClick={close}>
-              Contáctame
+              {t.header.cta}
               <span className="btn-arrow">→</span>
             </a>
           </nav>

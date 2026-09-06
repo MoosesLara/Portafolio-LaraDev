@@ -1,25 +1,28 @@
-import { profile, strengths } from '../data/config'
+import { profile } from '../data/config'
 import Reveal from './Reveal'
 import useReveal from '../hooks/useReveal'
 import StrengthCard from './StrengthCard'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function About() {
+  const { t } = useLanguage()
   const [skillsRef, skillsVisible] = useReveal()
 
   return (
     <section className="about" id="about">
       <div className="about-head">
         <Reveal as="h2" className="about-heading" animation="fadeInUp">
-          Diseñado para Ayudarte a Lanzar Más Rápido, <em>Sin Complicaciones</em>
+          {t.about.headingPre}
+          <em>{t.about.headingEm}</em>
         </Reveal>
         <Reveal className="about-lead" animation="fadeInUp" delay={0.15}>
-          <p>{profile.about}</p>
+          <p>{t.about.lead}</p>
         </Reveal>
       </div>
 
       <div className="strengths">
-        {strengths.map((item, i) => (
-          <StrengthCard item={item} index={i} key={item.title} />
+        {t.about.strengths.map((item, i) => (
+          <StrengthCard item={item} index={i} key={i} />
         ))}
       </div>
 

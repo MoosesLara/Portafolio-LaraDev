@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 function getInitialTheme() {
   const attr = document.documentElement.getAttribute('data-theme')
@@ -23,6 +24,7 @@ function MoonIcon(props) {
 }
 
 export default function ThemeToggle() {
+  const { t } = useLanguage()
   const [theme, setTheme] = useState(getInitialTheme)
   const isDark = theme === 'dark'
 
@@ -44,8 +46,8 @@ export default function ThemeToggle() {
       aria-checked={isDark}
       className="theme-switch"
       onClick={toggle}
-      aria-label={isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-      title={isDark ? 'Modo claro' : 'Modo oscuro'}
+      aria-label={isDark ? t.themeToggle.toLight : t.themeToggle.toDark}
+      title={isDark ? t.themeToggle.light : t.themeToggle.dark}
     >
       <SunIcon className="theme-switch-track-icon theme-switch-track-icon-sun" />
       <MoonIcon className="theme-switch-track-icon theme-switch-track-icon-moon" />

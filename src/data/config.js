@@ -50,11 +50,36 @@ export const certificationGroups = [
   {
     issuer: 'Anthropic',
     items: [
-      { title: 'Model Context Protocol: Advanced Topics', year: 2026, month: 4, verifyUrl: null },
-      { title: 'Introduction to agent skills', year: 2026, month: 4, verifyUrl: null },
-      { title: 'Introduction to subagents', year: 2026, month: 4, verifyUrl: null },
-      { title: 'Claude 101', year: 2026, month: 4, verifyUrl: null },
-      { title: 'AI Fluency Framework & Foundations', year: 2026, month: 4, verifyUrl: null },
+      {
+        title: 'Model Context Protocol: Advanced Topics',
+        year: 2026,
+        month: 4,
+        verifyUrl: 'https://verify.skilljar.com/c/89eir4724u3x',
+      },
+      {
+        title: 'Introduction to agent skills',
+        year: 2026,
+        month: 4,
+        verifyUrl: 'https://verify.skilljar.com/c/hwfu5igobon6',
+      },
+      {
+        title: 'Introduction to subagents',
+        year: 2026,
+        month: 4,
+        verifyUrl: 'https://verify.skilljar.com/c/mi3rhydan6hv',
+      },
+      {
+        title: 'Claude 101',
+        year: 2026,
+        month: 4,
+        verifyUrl: 'https://verify.skilljar.com/c/366b8qo5ozx8',
+      },
+      {
+        title: 'AI Fluency Framework & Foundations',
+        year: 2026,
+        month: 4,
+        verifyUrl: 'https://verify.skilljar.com/c/psfmaxweuzrf',
+      },
     ],
   },
   {

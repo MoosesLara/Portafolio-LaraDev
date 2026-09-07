@@ -5,6 +5,8 @@ export const translations = {
     nav: {
       about: 'Sobre mí',
       projects: 'Proyectos',
+      certifications: 'Certificaciones',
+      mentorship: 'Mentorías',
       contact: 'Contacto',
     },
     header: {
@@ -71,6 +73,63 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
       text: '¿Tienes un proyecto en mente o quieres platicar? Escríbeme, con gusto respondo.',
       cta: 'Enviar Email',
     },
+    certifications: {
+      eyebrow: 'Aprendizaje continuo.',
+      headingPre: 'Mis ',
+      headingHighlight: 'certificaciones',
+      intro:
+        'Cursos y certificaciones que he completado para seguir creciendo como desarrollador.',
+      verifyLabel: 'Ver certificado',
+      dateLabel: 'Obtenido en',
+    },
+    mentorship: {
+      eyebrow: 'Aprender es un camino, no una meta.',
+      headingPre: 'Mentorías ',
+      headingHighlight: '1 a 1',
+      intro:
+        'Acompaño a quienes están dando sus primeros pasos en frontend, ya sea para su primer empleo, un cambio de carrera o simplemente para dejar de sentirse perdidos.',
+      topicsHeading: 'En qué te puedo ayudar',
+      topics: [
+        {
+          title: 'React y JavaScript moderno',
+          description:
+            'Fundamentos sólidos y buenas prácticas para dejar de copiar y empezar a entender.',
+        },
+        {
+          title: 'Preparación para entrevistas',
+          description:
+            'Práctica de preguntas técnicas, retos de código y cómo explicar tus decisiones con claridad.',
+        },
+        {
+          title: 'Construcción de portafolio',
+          description:
+            'Cómo elegir, presentar y documentar tus proyectos para que realmente destaquen.',
+        },
+        {
+          title: 'Plan de carrera',
+          description:
+            'Qué aprender después, cómo priorizar, y cómo moverte de junior a un rol con más criterio.',
+        },
+      ],
+      ctaHeading: 'Agenda una sesión',
+      ctaText: 'Escríbeme contándome en qué estás atorado y en qué te gustaría que te ayude.',
+      ctaButton: 'Agendar mentoría',
+      testimonialsHeading: 'Lo que dicen quienes ya tomaron una sesión',
+      testimonials: [
+        {
+          quote:
+            'Me ayudó a entender por qué mi código funcionaba, no solo a copiarlo. Cambió por completo cómo estudio.',
+        },
+        {
+          quote:
+            'Llegué sin saber ni por dónde empezar mi portafolio y salí con un plan claro de qué mostrar y cómo explicarlo.',
+        },
+        {
+          quote:
+            'La sesión de entrevistas técnicas fue justo lo que necesitaba antes de mi primera entrevista real.',
+        },
+      ],
+    },
     footer: {
       madeWith: 'Hecho con amor',
     },
@@ -93,6 +152,8 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
     nav: {
       about: 'About',
       projects: 'Projects',
+      certifications: 'Certifications',
+      mentorship: 'Mentorship',
       contact: 'Contact',
     },
     header: {
@@ -158,6 +219,60 @@ details, and turning design into real products people actually use.`,
       heading: 'Contact Me',
       text: "Have a project in mind or just want to chat? Write to me, I'd love to hear from you.",
       cta: 'Send Email',
+    },
+    certifications: {
+      eyebrow: 'Always learning.',
+      headingPre: 'My ',
+      headingHighlight: 'certifications',
+      intro: "Courses and certifications I've completed to keep growing as a developer.",
+      verifyLabel: 'View certificate',
+      dateLabel: 'Earned',
+    },
+    mentorship: {
+      eyebrow: 'Learning is a path, not a destination.',
+      headingPre: '1:1 ',
+      headingHighlight: 'Mentorship',
+      intro:
+        "I work with people taking their first steps in frontend — landing their first job, switching careers, or just feeling stuck and unsure what to focus on.",
+      topicsHeading: 'How I can help',
+      topics: [
+        {
+          title: 'React & Modern JavaScript',
+          description:
+            'Solid fundamentals and good practices, so you stop copying and start understanding.',
+        },
+        {
+          title: 'Interview Prep',
+          description:
+            'Practice with technical questions, coding challenges, and how to explain your decisions clearly.',
+        },
+        {
+          title: 'Portfolio Building',
+          description: 'How to choose, present, and document your projects so they actually stand out.',
+        },
+        {
+          title: 'Career Roadmap',
+          description:
+            "What to learn next, how to prioritize, and how to move from junior to a more senior mindset.",
+        },
+      ],
+      ctaHeading: 'Book a session',
+      ctaText: "Write to me and tell me what you're stuck on and how you'd like me to help.",
+      ctaButton: 'Book a mentorship',
+      testimonialsHeading: 'What people say after a session',
+      testimonials: [
+        {
+          quote:
+            "It helped me understand why my code worked, not just copy it. It completely changed how I study.",
+        },
+        {
+          quote:
+            "I came in not knowing where to even start with my portfolio and left with a clear plan of what to show and how to explain it.",
+        },
+        {
+          quote: 'The interview prep session was exactly what I needed before my first real interview.',
+        },
+      ],
     },
     footer: {
       madeWith: 'Made with love',

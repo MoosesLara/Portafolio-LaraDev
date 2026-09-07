@@ -850,6 +850,155 @@
   color: var(--accent-1);
 }
 
+/* Shared page intro (Certifications / Mentorship) */
+.page-section {
+  padding: 96px clamp(24px, 6vw, 80px) 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.page-eyebrow {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text);
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.page-intro-text {
+  margin-top: 16px;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.page-subheading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* Certifications */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent-2);
+}
+
+.cert-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cert-issuer {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cert-date {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.cert-verify {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.cert-verify:hover {
+  text-decoration: underline;
+}
+
+/* Mentorship */
+.mentorship-cta {
+  padding: 96px clamp(24px, 6vw, 80px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    radial-gradient(
+      ellipse 80% 90% at 50% 50%,
+      color-mix(in srgb, var(--accent-1) 22%, transparent),
+      transparent 70%
+    ),
+    var(--bg);
+}
+
+.testimonials-section {
+  padding: 96px clamp(24px, 6vw, 80px);
+  background: var(--bg-alt);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.testimonial-quote {
+  font-size: 16px;
+  color: var(--text-h);
+  line-height: 1.65;
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-top: 16px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.testimonial-role {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.7;
+}
+
 .footer-copy {
   font-size: 12px;
   color: var(--text);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function MobileMenu({ links }) {
@@ -54,14 +55,14 @@ export default function MobileMenu({ links }) {
             aria-hidden={!open}
           >
             {links.map((link) => (
-              <a key={link.href} href={link.href} onClick={close}>
+              <Link key={link.to} to={link.to} onClick={close}>
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a className="mobile-menu-cta" href="#contact" onClick={close}>
+            <Link className="mobile-menu-cta" to="/#contact" onClick={close}>
               {t.header.cta}
               <span className="btn-arrow">→</span>
-            </a>
+            </Link>
           </nav>
         </>,
         document.body,

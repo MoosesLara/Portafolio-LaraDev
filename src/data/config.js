@@ -43,3 +43,39 @@ export const projects = [
     demo: null,
   },
 ]
+
+// Título/institución no cambian con el idioma. Reemplaza con tus certificados reales.
+export const certifications = [
+  {
+    title: 'Meta Front-End Developer',
+    issuer: 'Meta · Coursera',
+    date: '2025',
+    verifyUrl: 'https://coursera.org/verify/tu-certificado',
+  },
+  {
+    title: 'JavaScript Algorithms and Data Structures',
+    issuer: 'freeCodeCamp',
+    date: '2024',
+    verifyUrl: 'https://freecodecamp.org/certification/tu-usuario/javascript-algorithms-and-data-structures',
+  },
+  {
+    title: 'React - The Complete Guide',
+    issuer: 'Udemy',
+    date: '2024',
+    verifyUrl: null,
+  },
+  {
+    title: 'Responsive Web Design',
+    issuer: 'freeCodeCamp',
+    date: '2023',
+    verifyUrl: null,
+  },
+]
+
+// Nombre/rol no cambian con el idioma; la cita (por índice) está en
+// translations.js -> mentorship.testimonials.
+export const testimonials = [
+  { name: 'Ana Pérez', role: 'Junior Frontend Developer' },
+  { name: 'Carlos Gómez', role: 'Bootcamp Graduate' },
+  { name: 'Lucía Fernández', role: 'Career Switcher' },
+]

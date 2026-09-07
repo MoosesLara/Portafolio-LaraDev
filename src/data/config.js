@@ -44,31 +44,87 @@ export const projects = [
   },
 ]
 
-// Título/institución no cambian con el idioma. Reemplaza con tus certificados reales.
-export const certifications = [
+// Certificaciones agrupadas por institución. `month` es opcional (1-12); si no
+// se indica, solo se muestra el año. title/issuer no cambian con el idioma.
+export const certificationGroups = [
   {
-    title: 'Meta Front-End Developer',
-    issuer: 'Meta · Coursera',
-    date: '2025',
-    verifyUrl: 'https://coursera.org/verify/tu-certificado',
+    issuer: 'Anthropic',
+    items: [
+      { title: 'Model Context Protocol: Advanced Topics', year: 2026, month: 4, verifyUrl: null },
+      { title: 'Introduction to agent skills', year: 2026, month: 4, verifyUrl: null },
+      { title: 'Introduction to subagents', year: 2026, month: 4, verifyUrl: null },
+      { title: 'Claude 101', year: 2026, month: 4, verifyUrl: null },
+      { title: 'AI Fluency Framework & Foundations', year: 2026, month: 4, verifyUrl: null },
+    ],
   },
   {
-    title: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
-    date: '2024',
-    verifyUrl: 'https://freecodecamp.org/certification/tu-usuario/javascript-algorithms-and-data-structures',
+    issuer: 'HackerRank',
+    items: [
+      {
+        title: 'Software Engineer',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/4ffd0f98e2a1',
+      },
+      {
+        title: 'Problem Solving (Intermediate)',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/95e85b24941d',
+      },
+      {
+        title: 'JavaScript (Intermediate)',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/eb0a51305d61',
+      },
+      {
+        title: 'SQL (Intermediate)',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/d907a20e64c9',
+      },
+      {
+        title: 'Angular (Intermediate)',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/d04da3b87371',
+      },
+      {
+        title: 'Software Engineer (Intermediate)',
+        year: 2026,
+        month: 2,
+        verifyUrl: 'https://www.hackerrank.com/certificates/4a895deec8b1',
+      },
+    ],
   },
   {
-    title: 'React - The Complete Guide',
+    issuer: 'AWS',
+    items: [
+      { title: 'AWS Knowledge: Architecting Badge', year: 2023, month: 3, verifyUrl: null },
+      { title: 'AWS Certified Cloud Practitioner', year: 2021, month: 10, verifyUrl: null },
+      { title: 'AWS Partner: Accreditation (Business) Badge', year: 2021, month: 10, verifyUrl: null },
+      { title: 'AWS Partner: Cloud Economics Accreditation Badge', year: 2021, month: 10, verifyUrl: null },
+    ],
+  },
+  {
     issuer: 'Udemy',
-    date: '2024',
-    verifyUrl: null,
+    items: [
+      {
+        title: 'TypeScript',
+        year: 2023,
+        month: 5,
+        verifyUrl: 'https://www.udemy.com/certificate/UC-eb245487-a34c-40fb-8b2a-8f9591bc2689/',
+      },
+      { title: 'Solutions Architect - AWS', year: 2023, month: null, verifyUrl: null },
+    ],
   },
   {
-    title: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
-    date: '2023',
-    verifyUrl: null,
+    issuer: 'Platzi',
+    items: [
+      { title: 'Frontend Development', year: 2020, month: 12, verifyUrl: null },
+      { title: 'Web Development Certification', year: 2020, month: 7, verifyUrl: null },
+    ],
   },
 ]
 

@@ -886,6 +886,22 @@
 }
 
 /* Certifications */
+.cert-group {
+  margin-top: 56px;
+}
+
+.cert-group:first-of-type {
+  margin-top: 0;
+}
+
+.cert-group-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -910,12 +926,6 @@
 .cert-card h3 {
   font-size: 20px;
   margin-bottom: 8px;
-}
-
-.cert-issuer {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text);
 }
 
 .cert-date {

@@ -4,6 +4,7 @@ export const translations = {
   es: {
     nav: {
       about: 'Sobre mí',
+      career: 'Mi Carrera',
       projects: 'Proyectos',
       certifications: 'Certificaciones',
       mentorship: 'Mentorías',
@@ -42,6 +43,51 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
           title: 'Diseño Responsivo',
           description:
             'De diseño a código sin perder el detalle: layouts que se adaptan de móvil a escritorio.',
+        },
+      ],
+    },
+    career: {
+      eyebrow: 'Mi trayectoria.',
+      headingPre: 'Del código freelance al ',
+      headingEm: 'frontend empresarial',
+      intro:
+        'Empecé en 2015 construyendo sitios web freelance para clientes locales. Desde entonces he trabajado en sistemas ERP, banca y salud, pasando de reportes SAP ABAP a interfaces modernas con Angular y React. Hoy lidero el desarrollo frontend de una plataforma empresarial, con más de 10 años de experiencia entregando software confiable en equipos multidisciplinarios.',
+      presentLabel: 'Presente',
+      items: [
+        {
+          title: 'Los inicios',
+          description:
+            'Empecé construyendo sitios web a la medida para clientes locales — HTML, CSS, JS y WordPress — aprendiendo a entregar soluciones reales, no solo código.',
+        },
+        {
+          title: 'El mundo ERP',
+          description:
+            'Di el salto a sistemas empresariales: reportes ejecutivos, extracción de datos y soluciones SAP ABAP para procesos críticos de facturación y cumplimiento financiero.',
+        },
+        {
+          title: 'Detrás de los datos',
+          description:
+            'Monitoreo 24/7 de flujos de datos y reportes, resolviendo incidencias y asegurando la integridad de la información hacia el data lake.',
+        },
+        {
+          title: 'El giro a frontend',
+          description:
+            'Encontré mi lugar en el frontend: lideré el rediseño UI/UX de aplicaciones internas y construí una plataforma fintech con Angular, TailwindCSS y pruebas con Jest.',
+        },
+        {
+          title: 'Diseño con propósito',
+          description:
+            'Diseñé una plataforma orientada a datos siguiendo Domain-Driven Design, con dashboards interactivos en Chart.js para decisiones operativas en tiempo real.',
+        },
+        {
+          title: 'Frontend en salud',
+          description:
+            'Modernicé aplicaciones de salud construidas sobre AngularJS legacy, liderando la estabilización de componentes críticos como punto de escalamiento técnico.',
+        },
+        {
+          title: 'Escalando en equipo',
+          description:
+            'Hoy formo parte de un equipo Scrum multidisciplinario, a cargo del desarrollo end-to-end de un ERP empresarial con Angular 21 y Tailwind CSS.',
         },
       ],
     },
@@ -151,6 +197,7 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
   en: {
     nav: {
       about: 'About',
+      career: 'My Career',
       projects: 'Projects',
       certifications: 'Certifications',
       mentorship: 'Mentorship',
@@ -189,6 +236,51 @@ details, and turning design into real products people actually use.`,
           title: 'Responsive Design',
           description:
             'From design to code without losing the details: layouts that adapt from mobile to desktop.',
+        },
+      ],
+    },
+    career: {
+      eyebrow: 'My journey.',
+      headingPre: 'From freelance code to ',
+      headingEm: 'enterprise frontend',
+      intro:
+        "I started in 2015 building freelance websites for local clients. Since then I've worked across ERP, fintech, and healthcare systems — moving from SAP ABAP reports to modern Angular and React interfaces. Today I lead frontend development for an enterprise platform, bringing 10+ years of experience delivering reliable software within cross-functional teams.",
+      presentLabel: 'Present',
+      items: [
+        {
+          title: 'The beginnings',
+          description:
+            'Started out building custom websites for local clients — HTML, CSS, JS, and WordPress — learning to ship real solutions, not just code.',
+        },
+        {
+          title: 'Into the ERP world',
+          description:
+            'Made the jump into enterprise systems: executive reports, data extraction, and custom SAP ABAP solutions for critical billing and financial-compliance processes.',
+        },
+        {
+          title: 'Behind the data',
+          description:
+            '24/7 monitoring of data flows and reporting, resolving incidents and keeping information flowing reliably into the data lake.',
+        },
+        {
+          title: 'The shift to frontend',
+          description:
+            'Found my place in frontend: led the UI/UX redesign of internal apps and built a fintech lending platform with Angular, TailwindCSS, and Jest.',
+        },
+        {
+          title: 'Design with purpose',
+          description:
+            'Designed a data-driven platform following Domain-Driven Design, with interactive Chart.js dashboards for real-time operational decisions.',
+        },
+        {
+          title: 'Frontend in healthcare',
+          description:
+            'Modernized healthcare applications built on legacy AngularJS, leading UI stabilization as the technical escalation point for critical issues.',
+        },
+        {
+          title: 'Scaling as a team',
+          description:
+            "Today I'm part of a cross-functional Scrum team, owning end-to-end frontend development for an enterprise ERP platform with Angular 21 and Tailwind CSS.",
         },
       ],
     },

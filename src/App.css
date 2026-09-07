@@ -700,6 +700,116 @@
   color: var(--text-h);
 }
 
+/* Career */
+.career {
+  padding: 96px clamp(24px, 6vw, 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  background:
+    radial-gradient(
+      ellipse 70% 60% at 100% 0%,
+      color-mix(in srgb, var(--accent-3) 16%, transparent),
+      transparent 70%
+    ),
+    var(--bg);
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.career-content {
+  text-align: left;
+  position: sticky;
+  top: 112px;
+}
+
+.career-content .about-heading,
+.career-content .about-lead {
+  text-align: left;
+}
+
+.career-content .page-eyebrow {
+  text-align: left;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: -40px;
+  width: 2px;
+  background: var(--gradient);
+  opacity: 0.35;
+}
+
+.timeline-item:last-child::before {
+  content: none;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-2) 18%, transparent);
+}
+
+.timeline-year {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--accent-2);
+}
+
+.timeline-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: var(--text-h);
+}
+
+.timeline-description {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .career-content {
+    position: static;
+  }
+}
+
 /* Projects */
 .projects {
   padding: 80px clamp(24px, 6vw, 80px);
@@ -961,6 +1071,14 @@
       transparent 70%
     ),
     var(--bg);
+}
+
+.mentorship-cta-btn {
+  padding: 20px 40px;
+}
+
+.mentorship-cta .contact-text {
+  margin-bottom: 20px;
 }
 
 .testimonials-section {

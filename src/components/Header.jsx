@@ -9,6 +9,7 @@ export default function Header() {
 
   const links = [
     { to: '/#about', label: t.nav.about },
+    { to: '/#career', label: t.nav.career },
     { to: '/#projects', label: t.nav.projects },
     { to: '/certifications', label: t.nav.certifications },
     { to: '/mentorship', label: t.nav.mentorship },

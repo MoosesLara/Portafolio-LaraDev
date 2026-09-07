@@ -24,6 +24,18 @@ export const socials = [
   { label: 'Twitter / X', href: 'https://x.com/tu-usuario', icon: 'twitter' },
 ]
 
+// Empresa/fechas no cambian con el idioma; título y descripción de cada hito
+// (por índice) están en translations.js -> career.items. `end: null` = actual.
+export const career = [
+  { company: 'Freelance', start: 2015, end: 2018 },
+  { company: 'Entaeh', start: 2018, end: 2021 },
+  { company: 'CBC Guatemala', start: 2021, end: 2021 },
+  { company: 'MyApp Software', start: 2021, end: 2023 },
+  { company: 'LABYMED', start: 2023, end: 2024 },
+  { company: 'CIAM', start: 2024, end: 2025 },
+  { company: 'PDC', start: 2025, end: null },
+]
+
 // stack/repo/demo no cambian con el idioma; título y descripción de cada
 // proyecto (por índice) están en translations.js -> projects.items.
 export const projects = [

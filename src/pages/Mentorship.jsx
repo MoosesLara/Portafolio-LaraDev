@@ -62,7 +62,7 @@ export default function Mentorship() {
         </Reveal>
         <Reveal delay={0.3} animation="zoomIn">
           <a
-            className="btn btn-primary animate__animated animate__pulse animate__infinite animate__slower"
+            className="btn btn-primary mentorship-cta-btn animate__animated animate__pulse animate__infinite animate__slower"
             href={`mailto:${profile.email}`}
             target="_blank"
             rel="noreferrer"

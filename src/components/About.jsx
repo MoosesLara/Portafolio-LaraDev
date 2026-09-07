@@ -10,34 +10,36 @@ export default function About() {
 
   return (
     <section className="about" id="about">
-      <div className="about-head">
-        <Reveal as="h2" className="about-heading" animation="fadeInUp">
-          {t.about.headingPre}
-          <em>{t.about.headingEm}</em>
-        </Reveal>
-        <Reveal className="about-lead" animation="fadeInUp" delay={0.15}>
-          <p>{t.about.lead}</p>
-        </Reveal>
-      </div>
+      <div className="about-inner">
+        <div className="about-head">
+          <Reveal as="h2" className="about-heading" animation="fadeInUp">
+            {t.about.headingPre}
+            <em>{t.about.headingEm}</em>
+          </Reveal>
+          <Reveal className="about-lead" animation="fadeInUp" delay={0.15}>
+            <p>{t.about.lead}</p>
+          </Reveal>
+        </div>
 
-      <div className="strengths">
-        {t.about.strengths.map((item, i) => (
-          <StrengthCard item={item} index={i} key={i} />
-        ))}
-      </div>
+        <div className="strengths">
+          {t.about.strengths.map((item, i) => (
+            <StrengthCard item={item} index={i} key={i} />
+          ))}
+        </div>
 
-      <div ref={skillsRef} className="skills">
-        {profile.skills.map((skill, i) => (
-          <span
-            key={skill}
-            className={
-              'skill-pill' + (skillsVisible ? ' animate__animated animate__fadeInUp' : ' reveal')
-            }
-            style={skillsVisible ? { animationDelay: `${i * 0.06}s` } : undefined}
-          >
-            {skill}
-          </span>
-        ))}
+        <div ref={skillsRef} className="skills">
+          {profile.skills.map((skill, i) => (
+            <span
+              key={skill}
+              className={
+                'skill-pill' + (skillsVisible ? ' animate__animated animate__fadeInUp' : ' reveal')
+              }
+              style={skillsVisible ? { animationDelay: `${i * 0.06}s` } : undefined}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   )

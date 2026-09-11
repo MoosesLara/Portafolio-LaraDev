@@ -1,9 +1,10 @@
-import { projects } from '../data/config'
+import { useState } from 'react'
+import { projects, collaborations } from '../data/config'
 import Reveal from './Reveal'
 import useReveal from '../hooks/useReveal'
 import { useLanguage } from '../context/LanguageContext'
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project, index, statusLabel }) {
   const { t } = useLanguage()
   const [ref, visible] = useReveal()
 
@@ -53,6 +54,17 @@ function ProjectCard({ project, index }) {
             {t.projects.demo}
           </a>
         )}
+        {project.url && (
+          <a href={project.url} target="_blank" rel="noreferrer">
+            {t.projects.visit}
+          </a>
+        )}
+        {statusLabel && (
+          <span className="status-badge">
+            <span className="status-dot" aria-hidden="true" />
+            {statusLabel}
+          </span>
+        )}
       </div>
     </article>
   )
@@ -60,7 +72,14 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   const { t } = useLanguage()
-  const items = projects.map((project, i) => ({ ...project, ...t.projects.items[i] }))
+  const [tab, setTab] = useState('mine')
+
+  const mineItems = projects.map((project, i) => ({ ...project, ...t.projects.items[i] }))
+  const collabItems = collaborations.map((project, i) => ({
+    ...project,
+    ...t.projects.collaborations.items[i],
+  }))
+  const activeItems = tab === 'mine' ? mineItems : collabItems
 
   return (
     <section className="projects" id="projects">
@@ -68,9 +87,36 @@ export default function Projects() {
         {t.projects.headingPre}
         <span className="highlight">{t.projects.headingHighlight}</span>
       </Reveal>
+
+      <div className="project-tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={tab === 'mine'}
+          className={'project-tab' + (tab === 'mine' ? ' is-active' : '')}
+          onClick={() => setTab('mine')}
+        >
+          {t.projects.tabMine}
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={tab === 'collabs'}
+          className={'project-tab' + (tab === 'collabs' ? ' is-active' : '')}
+          onClick={() => setTab('collabs')}
+        >
+          {t.projects.tabCollabs}
+        </button>
+      </div>
+
       <div className="project-grid">
-        {items.map((project, i) => (
-          <ProjectCard key={i} project={project} index={i} />
+        {activeItems.map((project, i) => (
+          <ProjectCard
+            key={`${tab}-${i}`}
+            project={project}
+            index={i}
+            statusLabel={tab === 'collabs' ? t.projects.statusActive : undefined}
+          />
         ))}
       </div>
     </section>

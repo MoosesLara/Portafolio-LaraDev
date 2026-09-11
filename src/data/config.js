@@ -56,6 +56,17 @@ export const projects = [
   },
 ]
 
+// Colaboraciones activas (freelance) en las que participas actualmente.
+// stack/url no cambian con el idioma; título y descripción (por índice)
+// están en translations.js -> projects.collaborations.items.
+export const collaborations = [
+  {
+    stack: ['Angular 19', 'TypeScript', 'Angular Material', 'Node.js'],
+    url: 'https://bithealt.com/#/simatec/login',
+  },
+  { stack: ['Angular 19', 'TypeScript', 'Angular Material', 'Node.js'], url: null },
+]
+
 // Certificaciones agrupadas por institución. `month` es opcional (1-12); si no
 // se indica, solo se muestra el año. title/issuer no cambian con el idioma.
 export const certificationGroups = [

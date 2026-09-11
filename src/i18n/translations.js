@@ -96,6 +96,10 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
       headingHighlight: 'proyectos',
       code: 'Código',
       demo: 'Demo',
+      visit: 'Ver sitio',
+      tabMine: 'Mis Proyectos',
+      tabCollabs: 'Colaboraciones',
+      statusActive: 'Colaboración activa',
       items: [
         {
           title: 'Proyecto Uno',
@@ -113,6 +117,20 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
             'Descripción breve del proyecto: qué problema resuelve y qué lo hace interesante.',
         },
       ],
+      collaborations: {
+        items: [
+          {
+            title: 'Bitlab',
+            description:
+              'Plataforma integral para laboratorios y centros médicos que digitaliza todo el flujo clínico — desde la solicitud y toma de muestras hasta la entrega de resultados — con módulos de solicitudes, reportes, médicos, pruebas y administración de usuarios.',
+          },
+          {
+            title: 'Bitbank',
+            description:
+              'Sistema de gestión para bancos de sangre, adaptable a las necesidades de cada institución: cubre desde la toma de muestra y su evaluación hasta la generación de reportes y el flujo administrativo completo.',
+          },
+        ],
+      },
     },
     contact: {
       heading: 'Contáctame',
@@ -289,6 +307,10 @@ details, and turning design into real products people actually use.`,
       headingHighlight: 'projects',
       code: 'Code',
       demo: 'Demo',
+      visit: 'Visit site',
+      tabMine: 'My Projects',
+      tabCollabs: 'Collaborations',
+      statusActive: 'Active collaboration',
       items: [
         {
           title: 'Project One',
@@ -306,6 +328,20 @@ details, and turning design into real products people actually use.`,
             'Short project description: what problem it solves and what makes it interesting.',
         },
       ],
+      collaborations: {
+        items: [
+          {
+            title: 'Bitlab',
+            description:
+              'A complete platform for laboratories and medical centers that digitizes the entire clinical workflow — from sample requests and collection to results delivery — with modules for orders, reports, doctors, tests, and user administration.',
+          },
+          {
+            title: 'Bitbank',
+            description:
+              "A management system for blood banks, adaptable to each institution's needs — covering everything from sample collection and evaluation to reporting and the bank's full administrative workflow.",
+          },
+        ],
+      },
     },
     contact: {
       heading: 'Contact Me',

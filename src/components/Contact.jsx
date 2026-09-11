@@ -1,4 +1,4 @@
-import { profile, socials } from '../data/config'
+import { profile } from '../data/config'
 import Reveal from './Reveal'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -22,17 +22,6 @@ export default function Contact() {
         >
           {t.contact.cta}
         </a>
-      </Reveal>
-      <Reveal delay={0.45}>
-        <div className="contact-socials">
-          {socials
-            .filter((s) => s.label !== 'Email')
-            .map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
-                {s.label}
-              </a>
-            ))}
-        </div>
       </Reveal>
     </section>
   )

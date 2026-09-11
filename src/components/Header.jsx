@@ -12,7 +12,6 @@ export default function Header() {
     { to: '/#career', label: t.nav.career },
     { to: '/#projects', label: t.nav.projects },
     { to: '/certifications', label: t.nav.certifications },
-    { to: '/mentorship', label: t.nav.mentorship },
     { to: '/#contact', label: t.nav.contact },
   ]
 

@@ -1,10 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
 import Certifications from './pages/Certifications'
-import Mentorship from './pages/Mentorship'
 import './App.css'
 
 export default function App() {
@@ -17,7 +16,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/certifications" element={<Certifications />} />
-          <Route path="/mentorship" element={<Mentorship />} />
+          {/* Mentorship en desarrollo en la rama develop; oculta en producción por ahora. */}
+          <Route path="/mentorship" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />

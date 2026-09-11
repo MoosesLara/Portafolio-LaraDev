@@ -384,7 +384,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .nav,
   .btn-nav-cta {
     display: none;
@@ -395,7 +395,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 961px) {
   .mobile-menu-backdrop,
   .mobile-menu-panel {
     display: none;

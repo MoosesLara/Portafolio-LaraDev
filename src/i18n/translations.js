@@ -18,16 +18,21 @@ export const translations = {
       headingLine1: 'Construyo Interfaces',
       headingLine2: 'Rápidas, No ',
       headingHighlight: 'Complicadas',
-      tagline: 'Construyo aplicaciones web rápidas, escalables y con buen diseño.',
-      ctaProjects: 'Ver proyectos',
-      ctaContact: 'Contactar',
+      tagline:
+        'Aplicaciones web rápidas, escalables y con buen diseño — desde el primer commit hasta producción.',
+      ctaProjects: 'Ver mis proyectos',
+      ctaCV: 'Descargar CV',
     },
     about: {
       headingPre: 'Diseñado para Ayudarte a Lanzar Más Rápido, ',
       headingEm: 'Sin Complicaciones',
-      lead: `Soy Software Engineer especializado en frontend, enfocado en construir interfaces
-que se sienten rápidas, se ven bien y no se rompen. Me gusta el código limpio, los
-detalles de interacción y traducir diseño en productos reales que la gente usa.`,
+      lead: `Ingeniero Frontend Senior con más de 10 años de experiencia construyendo y
+modernizando aplicaciones web empresariales en los sectores salud, fintech y ERP.
+Experto en Angular (AngularJS hasta Angular 21), React y TypeScript, entregando
+interfaces responsivas, accesibles y multiplataforma. Trayectoria comprobada
+liderando el desarrollo de funcionalidades frontend de principio a fin, mejorando
+la confiabilidad en producción y colaborando con equipos de diseño, backend y QA
+para entregar soluciones de alta calidad.`,
       strengths: [
         {
           title: 'Arquitectura de Componentes',
@@ -82,12 +87,12 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
         {
           title: 'Frontend en salud',
           description:
-            'Modernicé aplicaciones de salud construidas sobre AngularJS legacy, liderando la estabilización de componentes críticos como punto de escalamiento técnico.',
+            'Desarrollé y modernicé aplicaciones web de salud con frontends en AngularJS y backend en PHP, dando soporte a flujos médicos críticos. Actué como punto de escalamiento técnico, estabilizando la UI y colaborando en operaciones de base de datos (T-SQL) y reportería para el negocio.',
         },
         {
           title: 'Escalando en equipo',
           description:
-            'Hoy formo parte de un equipo Scrum multidisciplinario, a cargo del desarrollo end-to-end de un ERP empresarial con Angular 21 y Tailwind CSS.',
+            'Hoy formo parte de un equipo Scrum multidisciplinario, a cargo de desarrollar features sobre Vikingo, un ecosistema web de más de 14 productos para el comercio — e-commerce, c-commerce, última milla, Vikingo Conecta, Vikingo Certificador y más — un software construido con la finalidad de transformar vidas.',
         },
       ],
     },
@@ -229,16 +234,21 @@ detalles de interacción y traducir diseño en productos reales que la gente usa
       headingLine1: 'I Build Interfaces',
       headingLine2: 'That Are Fast, Not ',
       headingHighlight: 'Complicated',
-      tagline: 'I build web apps that are fast, scalable, and well designed.',
-      ctaProjects: 'View projects',
-      ctaContact: 'Contact',
+      tagline:
+        'Fast, scalable web apps with great design — from the first commit to production.',
+      ctaProjects: 'View my projects',
+      ctaCV: 'Download CV',
     },
     about: {
       headingPre: 'Designed to Help You Ship Faster, ',
       headingEm: 'Without the Hassle',
-      lead: `I'm a Software Engineer specialized in frontend, focused on building interfaces
-that feel fast, look good, and don't break. I love clean code, interaction
-details, and turning design into real products people actually use.`,
+      lead: `Senior Frontend Engineer with 10+ years of experience building and modernizing
+enterprise web applications across healthcare, fintech, and ERP domains. Expert
+in Angular (AngularJS through Angular 21), React, and TypeScript, delivering
+responsive, accessible, and cross-platform interfaces. Proven track record
+leading frontend feature development end-to-end, improving production
+reliability, and collaborating with design, backend, and QA teams to deliver
+high-quality solutions.`,
       strengths: [
         {
           title: 'Component Architecture',
@@ -293,12 +303,12 @@ details, and turning design into real products people actually use.`,
         {
           title: 'Frontend in healthcare',
           description:
-            'Modernized healthcare applications built on legacy AngularJS, leading UI stabilization as the technical escalation point for critical issues.',
+            'Developed and modernized healthcare web apps with legacy AngularJS frontends and a PHP backend, supporting critical medical workflows. I acted as the technical escalation point, stabilizing the UI and collaborating on database operations (T-SQL) and reporting for the business.',
         },
         {
           title: 'Scaling as a team',
           description:
-            "Today I'm part of a cross-functional Scrum team, owning end-to-end frontend development for an enterprise ERP platform with Angular 21 and Tailwind CSS.",
+            "Today I'm part of a cross-functional Scrum team, developing features on Vikingo, a web ecosystem of 14+ commerce products — e-commerce, c-commerce, last-mile delivery, Vikingo Conecta, Vikingo Certificador, and more — software built with the purpose of transforming lives.",
         },
       ],
     },

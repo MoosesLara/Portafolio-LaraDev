@@ -1,19 +1,27 @@
 // Edita aquí tus datos personales. El texto que sí cambia según el idioma
 // (bio, títulos, descripciones) vive en src/i18n/translations.js.
 export const profile = {
-  name: 'Moises Lara',
-  role: 'Software Engineer Frontend',
+  name: 'Moisés Lara',
+  role: 'Frontend Engineer',
+  keywords: ['Angular', 'TypeScript', 'AWS'],
   location: 'México',
   email: 'laramoises73@gmail.com',
   skills: [
-    'JavaScript',
+    'JavaScript (ES6+)',
     'TypeScript',
+    'HTML5',
+    'CSS3',
+    'Sass/SCSS',
+    'Angular (AngularJS → Angular 21)',
     'React',
-    'Node.js',
-    'CSS',
+    'Tailwind CSS',
+    'Material UI',
     'Git',
-    'SQL',
-    'APIs REST',
+    'Agile/Scrum',
+    'Figma',
+    'Jest',
+    'AWS (exposure)',
+    'Docker (exposure)',
   ],
 }
 

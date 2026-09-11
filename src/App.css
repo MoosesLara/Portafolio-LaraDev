@@ -449,6 +449,16 @@
   font-size: clamp(16px, 2vw, 20px);
 }
 
+.hero-identity {
+  margin-top: 16px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.hero-identity strong {
+  color: var(--text-h);
+}
+
 .hero-heading {
   font-size: clamp(40px, 6.5vw, 72px);
   font-weight: 800;
@@ -640,12 +650,11 @@
 }
 
 .about-lead {
-  flex: 1 1 300px;
-  max-width: 380px;
+  flex: 1 1 380px;
+  max-width: 480px;
 }
 
 .about-lead p {
-  white-space: pre-line;
   font-size: 16px;
   color: var(--text);
   line-height: 1.65;

@@ -1,4 +1,5 @@
 import CodeCard from './CodeCard'
+import { profile } from '../data/config'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function Hero() {
@@ -11,6 +12,13 @@ export default function Hero() {
         style={{ animationDelay: '0.1s' }}
       >
         {t.hero.eyebrow}
+      </p>
+
+      <p
+        className="hero-identity animate__animated animate__fadeInDown"
+        style={{ animationDelay: '0.18s' }}
+      >
+        <strong>{profile.name}</strong> · {profile.role} · {profile.keywords.join(' · ')}
       </p>
 
       <h1
@@ -40,8 +48,8 @@ export default function Hero() {
         >
           {t.hero.ctaProjects} <span className="btn-arrow">→</span>
         </a>
-        <a className="btn btn-ghost" href="#contact">
-          {t.hero.ctaContact}
+        <a className="btn btn-ghost" href={`${import.meta.env.BASE_URL}cv.pdf`} download>
+          {t.hero.ctaCV}
         </a>
       </div>
 

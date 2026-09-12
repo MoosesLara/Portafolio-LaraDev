@@ -48,7 +48,13 @@ export default function Hero() {
         >
           {t.hero.ctaProjects} <span className="btn-arrow">→</span>
         </a>
-        <a className="btn btn-ghost" href={`${import.meta.env.BASE_URL}cv.pdf`} download>
+        <a
+          className="btn btn-ghost"
+          href={`${import.meta.env.BASE_URL}Curriculum.pdf`}
+          target="_blank"
+          rel="noreferrer"
+          download="CV_MoisesLara.pdf"
+        >
           {t.hero.ctaCV}
         </a>
       </div>

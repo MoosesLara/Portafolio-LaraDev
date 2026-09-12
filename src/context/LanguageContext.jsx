@@ -7,9 +7,7 @@ function getInitialLang() {
   try {
     const stored = localStorage.getItem('lang')
     if (stored === 'es' || stored === 'en') return stored
-  } catch {
-    /* localStorage puede no estar disponible (modo privado, etc.) */
-  }
+  } catch {}
   return 'es'
 }
 
@@ -20,9 +18,7 @@ export function LanguageProvider({ children }) {
     document.documentElement.setAttribute('lang', lang)
     try {
       localStorage.setItem('lang', lang)
-    } catch {
-      /* localStorage puede no estar disponible (modo privado, etc.) */
-    }
+    } catch {}
   }, [lang])
 
   const toggleLang = () => setLang((l) => (l === 'es' ? 'en' : 'es'))

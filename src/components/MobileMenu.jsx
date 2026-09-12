@@ -52,7 +52,7 @@ export default function MobileMenu({ links }) {
           <nav
             id="mobile-menu-panel"
             className={'mobile-menu-panel' + (open ? ' is-open' : '')}
-            aria-hidden={!open}
+            inert={!open}
           >
             {links.map((link) => (
               <Link key={link.to} to={link.to} onClick={close}>

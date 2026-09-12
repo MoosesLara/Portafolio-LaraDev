@@ -1,10 +1,12 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
-import Certifications from './pages/Certifications'
 import './App.css'
+
+const Certifications = lazy(() => import('./pages/Certifications'))
 
 export default function App() {
   return (
@@ -13,12 +15,13 @@ export default function App() {
       <Header />
       <ScrollToHash />
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/certifications" element={<Certifications />} />
-          {/* Mentorship en desarrollo en la rama develop; oculta en producción por ahora. */}
-          <Route path="/mentorship" element={<Navigate to="/" replace />} />
-        </Routes>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/mentorship" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
       </main>
       <Footer />
     </BrowserRouter>

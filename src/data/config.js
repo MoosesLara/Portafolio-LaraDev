@@ -1,5 +1,3 @@
-// Edita aquí tus datos personales. El texto que sí cambia según el idioma
-// (bio, títulos, descripciones) vive en src/i18n/translations.js.
 export const profile = {
   name: 'Moisés Lara',
   role: 'Frontend Engineer',
@@ -32,8 +30,6 @@ export const socials = [
   { label: 'Twitter / X', href: 'https://x.com/tu-usuario', icon: 'twitter' },
 ]
 
-// Empresa/fechas no cambian con el idioma; título y descripción de cada hito
-// (por índice) están en translations.js -> career.items. `end: null` = actual.
 export const career = [
   { company: 'Freelance', start: 2015, end: 2018 },
   { company: 'Entaeh', start: 2018, end: 2021 },
@@ -44,8 +40,6 @@ export const career = [
   { company: 'PDC', start: 2025, end: null },
 ]
 
-// stack/repo/demo no cambian con el idioma; título y descripción de cada
-// proyecto (por índice) están en translations.js -> projects.items.
 export const projects = [
   {
     stack: ['React', 'Node.js', 'MongoDB'],
@@ -64,9 +58,6 @@ export const projects = [
   },
 ]
 
-// Colaboraciones activas (freelance) en las que participas actualmente.
-// stack/url no cambian con el idioma; título y descripción (por índice)
-// están en translations.js -> projects.collaborations.items.
 export const collaborations = [
   {
     stack: ['Angular 19', 'TypeScript', 'Angular Material', 'Node.js'],
@@ -75,8 +66,6 @@ export const collaborations = [
   { stack: ['Angular 19', 'TypeScript', 'Angular Material', 'Node.js'], url: null },
 ]
 
-// Certificaciones agrupadas por institución. `month` es opcional (1-12); si no
-// se indica, solo se muestra el año. title/issuer no cambian con el idioma.
 export const certificationGroups = [
   {
     issuer: 'Anthropic',
@@ -184,8 +173,6 @@ export const certificationGroups = [
   },
 ]
 
-// Nombre/rol no cambian con el idioma; la cita (por índice) está en
-// translations.js -> mentorship.testimonials.
 export const testimonials = [
   { name: 'Ana Pérez', role: 'Junior Frontend Developer' },
   { name: 'Carlos Gómez', role: 'Bootcamp Graduate' },

@@ -1,9 +1,5 @@
 import useReveal from '../hooks/useReveal'
 
-/**
- * Wraps children in a div that plays an animate.css animation the first
- * time it scrolls into view. `delay`/`duration` are in seconds.
- */
 export default function Reveal({
   children,
   as: Tag = 'div',

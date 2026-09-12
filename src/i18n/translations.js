@@ -1,5 +1,3 @@
-// Todo el texto visible del sitio, por idioma. Los datos que no cambian con el
-// idioma (nombre, email, links, stack de tecnologías) viven en src/data/config.js.
 export const translations = {
   es: {
     nav: {

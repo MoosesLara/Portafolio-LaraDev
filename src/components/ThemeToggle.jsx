@@ -32,9 +32,7 @@ export default function ThemeToggle() {
     document.documentElement.setAttribute('data-theme', theme)
     try {
       localStorage.setItem('theme', theme)
-    } catch {
-      /* localStorage puede no estar disponible (modo privado, etc.) */
-    }
+    } catch {}
   }, [theme])
 
   const toggle = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))

@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="header animate__animated animate__fadeInDown">
-      <Link className="logo" to="/#top">
+      <Link className="logo" to="/#hero">
         <span className="logo-type">
           Lara<span className="logo-accent">Dev</span>
         </span>

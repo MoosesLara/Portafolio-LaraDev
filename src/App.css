@@ -255,24 +255,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 32px;
   height: 32px;
-  padding: 0 16px;
+  padding: 0;
   flex-shrink: 0;
-  border-radius: 999px;
+  border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--card-bg);
-  color: var(--text-h);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .lang-toggle:hover {
   border-color: var(--accent-1);
-  color: var(--accent-1);
   transform: translateY(-2px);
+  box-shadow: rgba(124, 58, 237, 0.35) 0 8px 20px -6px;
+}
+
+.lang-toggle-flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 .theme-switch {
@@ -511,8 +516,13 @@
   }
 
   .lang-toggle {
+    width: 28px;
     height: 28px;
-    padding: 0 10px;
+  }
+
+  .lang-toggle-flag {
+    width: 18px;
+    height: 13px;
   }
 
   .theme-switch {

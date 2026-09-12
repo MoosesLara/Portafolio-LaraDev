@@ -1,0 +1,21 @@
+<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+  <rect width="30" height="20" fill="#FFFFFF"/>
+  <rect y="0.000" width="30" height="1.538" fill="#B22234"/>
+  <rect y="3.077" width="30" height="1.538" fill="#B22234"/>
+  <rect y="6.154" width="30" height="1.538" fill="#B22234"/>
+  <rect y="9.231" width="30" height="1.538" fill="#B22234"/>
+  <rect y="12.308" width="30" height="1.538" fill="#B22234"/>
+  <rect y="15.385" width="30" height="1.538" fill="#B22234"/>
+  <rect y="18.462" width="30" height="1.538" fill="#B22234"/>
+  <rect width="12" height="10.77" fill="#3C3B6E"/>
+  <circle cx="2.4" cy="2" r="0.55" fill="#FFFFFF"/>
+  <circle cx="6" cy="2" r="0.55" fill="#FFFFFF"/>
+  <circle cx="9.6" cy="2" r="0.55" fill="#FFFFFF"/>
+  <circle cx="4.2" cy="4" r="0.55" fill="#FFFFFF"/>
+  <circle cx="7.8" cy="4" r="0.55" fill="#FFFFFF"/>
+  <circle cx="2.4" cy="6" r="0.55" fill="#FFFFFF"/>
+  <circle cx="6" cy="6" r="0.55" fill="#FFFFFF"/>
+  <circle cx="9.6" cy="6" r="0.55" fill="#FFFFFF"/>
+  <circle cx="4.2" cy="8" r="0.55" fill="#FFFFFF"/>
+  <circle cx="7.8" cy="8" r="0.55" fill="#FFFFFF"/>
+</svg>

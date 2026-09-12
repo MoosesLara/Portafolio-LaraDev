@@ -27,7 +27,11 @@ export const socials = [
   { label: 'GitHub', href: 'https://github.com/MoosesLara', icon: 'github' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/laradev/', icon: 'linkedin' },
   { label: 'Email', href: 'mailto:laramoises73@gmail.com', icon: 'email' },
-  { label: 'Twitter / X', href: 'https://x.com/tu-usuario', icon: 'twitter' },
+  {
+    label: 'Blog',
+    href: 'https://tree-stop-21e.notion.site/Blog-de-tecnolog-a-mi-camino-real-cd587b0c6ae048f8a13eda6026d5c992',
+    icon: 'blog',
+  },
 ]
 
 export const career = [

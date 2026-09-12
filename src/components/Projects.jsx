@@ -70,9 +70,11 @@ function ProjectCard({ project, index, statusLabel }) {
   )
 }
 
+const SHOW_MY_PROJECTS = false
+
 export default function Projects() {
   const { t } = useLanguage()
-  const [tab, setTab] = useState('mine')
+  const [tab, setTab] = useState(SHOW_MY_PROJECTS ? 'mine' : 'collabs')
 
   const mineItems = projects.map((project, i) => ({ ...project, ...t.projects.items[i] }))
   const collabItems = collaborations.map((project, i) => ({
@@ -88,26 +90,28 @@ export default function Projects() {
         <span className="highlight">{t.projects.headingHighlight}</span>
       </Reveal>
 
-      <div className="project-tabs" role="tablist">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={tab === 'mine'}
-          className={'project-tab' + (tab === 'mine' ? ' is-active' : '')}
-          onClick={() => setTab('mine')}
-        >
-          {t.projects.tabMine}
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={tab === 'collabs'}
-          className={'project-tab' + (tab === 'collabs' ? ' is-active' : '')}
-          onClick={() => setTab('collabs')}
-        >
-          {t.projects.tabCollabs}
-        </button>
-      </div>
+      {SHOW_MY_PROJECTS && (
+        <div className="project-tabs" role="tablist">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={tab === 'mine'}
+            className={'project-tab' + (tab === 'mine' ? ' is-active' : '')}
+            onClick={() => setTab('mine')}
+          >
+            {t.projects.tabMine}
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={tab === 'collabs'}
+            className={'project-tab' + (tab === 'collabs' ? ' is-active' : '')}
+            onClick={() => setTab('collabs')}
+          >
+            {t.projects.tabCollabs}
+          </button>
+        </div>
+      )}
 
       <div className="project-grid">
         {activeItems.map((project, i) => (

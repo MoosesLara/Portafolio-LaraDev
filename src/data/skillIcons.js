@@ -25,7 +25,7 @@ export const skillIcons = {
   HTML5: { path: siHtml5.path, color: `#${siHtml5.hex}` },
   CSS3: { path: siCss.path, color: `#${siCss.hex}` },
   'Sass/SCSS': { path: siSass.path, color: `#${siSass.hex}` },
-  'Angular (AngularJS → Angular 21)': { path: siAngular.path, color: `#${siAngular.hex}` },
+  Angular: { path: siAngular.path, color: '#dd0031' },
   React: { path: siReact.path, color: `#${siReact.hex}` },
   'Tailwind CSS': { path: siTailwindcss.path, color: `#${siTailwindcss.hex}` },
   'Material UI': { path: siMui.path, color: `#${siMui.hex}` },
@@ -33,6 +33,6 @@ export const skillIcons = {
   'Agile/Scrum': { path: cyclePath, color: '#0052cc' },
   Figma: { path: siFigma.path, color: `#${siFigma.hex}` },
   Jest: { path: siJest.path, color: `#${siJest.hex}` },
-  'AWS (exposure)': { path: cloudPath, color: '#ff9900' },
-  'Docker (exposure)': { path: siDocker.path, color: `#${siDocker.hex}` },
+  AWS: { path: cloudPath, color: '#ff9900' },
+  Docker: { path: siDocker.path, color: `#${siDocker.hex}` },
 }

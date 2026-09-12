@@ -10,7 +10,7 @@ export const profile = {
     'HTML5',
     'CSS3',
     'Sass/SCSS',
-    'Angular (AngularJS → Angular 21)',
+    'Angular',
     'React',
     'Tailwind CSS',
     'Material UI',
@@ -18,8 +18,8 @@ export const profile = {
     'Agile/Scrum',
     'Figma',
     'Jest',
-    'AWS (exposure)',
-    'Docker (exposure)',
+    'AWS',
+    'Docker',
   ],
 }
 

@@ -16,7 +16,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="footer-copy">
-        © {year} {profile.name}. {t.footer.madeWith} &lt;3
+        © {year} {profile.name}. {t.footer.madeWith}
       </p>
     </Reveal>
   )

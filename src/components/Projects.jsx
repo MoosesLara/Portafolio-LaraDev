@@ -8,19 +8,10 @@ function ProjectCard({ project, index, statusLabel }) {
   const { t } = useLanguage()
   const [ref, visible] = useReveal()
 
-  const handleMouseEnter = (e) => {
-    const el = e.currentTarget
-    el.classList.remove('animate__zoomIn')
-    el.classList.add('animate__animated', 'animate__heartBeat')
-  }
-
   const handleAnimationEnd = (e) => {
     if (e.target !== e.currentTarget) return
-    const el = e.currentTarget
     if (e.animationName === 'zoomIn') {
-      el.classList.remove('animate__zoomIn')
-    } else if (e.animationName === 'heartBeat') {
-      el.classList.remove('animate__heartBeat')
+      e.currentTarget.classList.remove('animate__zoomIn')
     }
   }
 
@@ -31,7 +22,6 @@ function ProjectCard({ project, index, statusLabel }) {
         'project-card' + (visible ? ' animate__animated animate__zoomIn' : ' reveal')
       }
       style={visible ? { animationDelay: `${index * 0.12}s` } : undefined}
-      onMouseEnter={handleMouseEnter}
       onAnimationEnd={handleAnimationEnd}
     >
       <h3>{project.title}</h3>

@@ -198,7 +198,7 @@ para entregar soluciones de alta calidad.`,
       ],
     },
     footer: {
-      madeWith: 'Hecho con amor',
+      madeWith: 'Hecho con profesionalismo',
     },
     themeToggle: {
       toLight: 'Cambiar a modo claro',
@@ -415,7 +415,7 @@ high-quality solutions.`,
       ],
     },
     footer: {
-      madeWith: 'Made with love',
+      madeWith: 'Made with professionalism',
     },
     themeToggle: {
       toLight: 'Switch to light mode',

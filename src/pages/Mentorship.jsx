@@ -7,11 +7,19 @@ import { useLanguage } from '../context/LanguageContext'
 function TestimonialCard({ item, index }) {
   const [ref, visible] = useReveal()
 
+  const handleAnimationEnd = (e) => {
+    if (e.target !== e.currentTarget) return
+    if (e.animationName === 'fadeInUp') {
+      e.currentTarget.classList.remove('animate__fadeInUp')
+    }
+  }
+
   return (
     <div
       ref={ref}
       className={'testimonial-card' + (visible ? ' animate__animated animate__fadeInUp' : ' reveal')}
       style={visible ? { animationDelay: `${index * 0.1}s` } : undefined}
+      onAnimationEnd={handleAnimationEnd}
     >
       <p className="testimonial-quote">“{item.quote}”</p>
       <p className="testimonial-author">{item.name}</p>

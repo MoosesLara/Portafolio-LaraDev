@@ -14,11 +14,19 @@ function CertCard({ cert, index }) {
   const { t, lang } = useLanguage()
   const [ref, visible] = useReveal()
 
+  const handleAnimationEnd = (e) => {
+    if (e.target !== e.currentTarget) return
+    if (e.animationName === 'fadeInUp') {
+      e.currentTarget.classList.remove('animate__fadeInUp')
+    }
+  }
+
   return (
     <article
       ref={ref}
       className={'cert-card' + (visible ? ' animate__animated animate__fadeInUp' : ' reveal')}
       style={visible ? { animationDelay: `${index * 0.06}s` } : undefined}
+      onAnimationEnd={handleAnimationEnd}
     >
       <h3>{cert.title}</h3>
       <p className="cert-date">

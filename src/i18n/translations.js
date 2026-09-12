@@ -209,6 +209,10 @@ para entregar soluciones de alta calidad.`,
     languageToggle: {
       label: 'Switch to English',
     },
+    patrioToggle: {
+      enable: 'Activar tema patrio',
+      disable: 'Desactivar tema patrio',
+    },
     mobileMenu: {
       open: 'Abrir menú',
       close: 'Cerrar menú',
@@ -421,6 +425,10 @@ high-quality solutions.`,
     },
     languageToggle: {
       label: 'Cambiar a español',
+    },
+    patrioToggle: {
+      enable: 'Enable patriotic theme',
+      disable: 'Disable patriotic theme',
     },
     mobileMenu: {
       open: 'Open menu',

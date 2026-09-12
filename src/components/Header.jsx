@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import ThemeToggle from './ThemeToggle'
 import LanguageToggle from './LanguageToggle'
+import BanderaToggle from './BanderaToggle'
 import MobileMenu from './MobileMenu'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -17,12 +18,15 @@ export default function Header() {
 
   return (
     <header className="header animate__animated animate__fadeInDown">
-      <Link className="logo" to="/#hero">
-        <span className="logo-type">
-          Lara<span className="logo-accent">Dev</span>
-        </span>
-        <span className="logo-cursor" aria-hidden="true" />
-      </Link>
+      <div className="header-brand">
+        <Link className="logo" to="/#hero">
+          <span className="logo-type">
+            Lara<span className="logo-accent">Dev</span>
+          </span>
+          <span className="logo-cursor" aria-hidden="true" />
+        </Link>
+        <BanderaToggle />
+      </div>
       <nav className="nav">
         {links.map((link) => (
           <Link key={link.to} to={link.to}>

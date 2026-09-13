@@ -35,17 +35,17 @@ para entregar soluciones de alta calidad.`,
         {
           title: 'Arquitectura de Componentes',
           description:
-            'Interfaces modulares y reutilizables, fáciles de mantener y escalar conforme el producto crece.',
+            'Interfaces modulares y reutilizables que escalan sin fricción, sin importar cuánto crezca el producto.',
         },
         {
           title: 'Rendimiento y Accesibilidad',
           description:
-            'Carga rápida, buenas prácticas de accesibilidad y una experiencia fluida en cualquier dispositivo.',
+            'Carga ultra rápida, accesibilidad de primer nivel y una experiencia impecable en cualquier dispositivo.',
         },
         {
           title: 'Diseño Responsivo',
           description:
-            'De diseño a código sin perder el detalle: layouts que se adaptan de móvil a escritorio.',
+            'Del diseño al pixel perfecto: layouts que se adaptan sin esfuerzo de móvil a escritorio.',
         },
       ],
     },
@@ -137,7 +137,7 @@ para entregar soluciones de alta calidad.`,
     },
     contact: {
       heading: 'Contáctame',
-      text: '¿Tienes un proyecto en mente o quieres platicar? Escríbeme, con gusto respondo.',
+      text: '¿Tienes un proyecto que merece llegar al siguiente nivel? Cuéntamelo — construyamos algo increíble juntos.',
       cta: 'Enviar Email',
     },
     certifications: {
@@ -255,17 +255,17 @@ high-quality solutions.`,
         {
           title: 'Component Architecture',
           description:
-            'Modular, reusable interfaces that are easy to maintain and scale as the product grows.',
+            'Modular, reusable components that scale effortlessly, no matter how big the product gets.',
         },
         {
           title: 'Performance & Accessibility',
           description:
-            'Fast load times, solid accessibility practices, and a smooth experience on any device.',
+            'Lightning-fast load times, top-tier accessibility, and a flawless experience on every device.',
         },
         {
           title: 'Responsive Design',
           description:
-            'From design to code without losing the details: layouts that adapt from mobile to desktop.',
+            'Pixel-perfect from design to code: layouts that adapt seamlessly from mobile to desktop.',
         },
       ],
     },
@@ -357,7 +357,7 @@ high-quality solutions.`,
     },
     contact: {
       heading: 'Contact Me',
-      text: "Have a project in mind or just want to chat? Write to me, I'd love to hear from you.",
+      text: "Got a project that deserves to level up? Tell me about it — let's build something amazing together.",
       cta: 'Send Email',
     },
     certifications: {

@@ -1380,13 +1380,36 @@
   gap: 16px;
 }
 
-.mentorship-calendar {
+.mentorship-calendar-block {
+  width: min(1100px, 92vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.mentorship-calendar-label {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-h);
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.mentorship-calendar-frame {
   width: 100%;
-  max-width: 720px;
+  padding: 4px;
+  border-radius: 20px;
+  background: var(--gradient);
+  box-shadow: var(--shadow);
+}
+
+.mentorship-calendar {
+  display: block;
+  width: 100%;
   height: 600px;
   border: 0;
   border-radius: 16px;
-  box-shadow: var(--shadow);
 }
 
 .bank-modal-backdrop {

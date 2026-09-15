@@ -64,12 +64,16 @@ export default function MentorshipBooking() {
 
   if (status === 'paid') {
     return isCalendarConfigured ? (
-      <iframe
-        key={status}
-        src={GOOGLE_CALENDAR_URL}
-        className="mentorship-calendar"
-        title={t.mentorship.calendarTitle}
-      />
+      <div key={status} className="mentorship-calendar-block">
+        <p className="mentorship-calendar-label">{t.mentorship.calendarLabel}</p>
+        <div className="mentorship-calendar-frame">
+          <iframe
+            src={GOOGLE_CALENDAR_URL}
+            className="mentorship-calendar"
+            title={t.mentorship.calendarTitle}
+          />
+        </div>
+      </div>
     ) : (
       <p key={status} className="mentorship-booking-status">
         {t.mentorship.calendarNotConfigured}

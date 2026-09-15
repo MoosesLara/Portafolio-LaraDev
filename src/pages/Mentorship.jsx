@@ -1,6 +1,7 @@
-import { profile, testimonials } from '../data/config'
+import { testimonials } from '../data/config'
 import Reveal from '../components/Reveal'
 import StrengthCard from '../components/StrengthCard'
+import MentorshipBooking from '../components/MentorshipBooking'
 import useReveal from '../hooks/useReveal'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -69,14 +70,7 @@ export default function Mentorship() {
           <p className="contact-text">{t.mentorship.ctaText}</p>
         </Reveal>
         <Reveal delay={0.3} animation="zoomIn">
-          <a
-            className="btn btn-primary mentorship-cta-btn animate__animated animate__pulse animate__infinite animate__slower"
-            href={`mailto:${profile.email}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.mentorship.ctaButton}
-          </a>
+          <MentorshipBooking />
         </Reveal>
       </section>
 

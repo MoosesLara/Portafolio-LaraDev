@@ -40,15 +40,16 @@ export default function Header() {
         <LanguageToggle />
         <ThemeToggle />
         <a
-          className="btn btn-nav-cta"
+          className="whatsapp-cta"
           href={getWhatsAppLink(t.header.whatsappMessage)}
           target="_blank"
           rel="noreferrer"
+          aria-label={t.header.cta}
+          title={t.header.cta}
         >
-          <svg viewBox="0 0 24 24" className="btn-whatsapp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" className="whatsapp-cta-icon" aria-hidden="true">
             <path d={siWhatsapp.path} fill="currentColor" />
           </svg>
-          {t.header.cta}
         </a>
         <MobileMenu links={links} />
       </div>

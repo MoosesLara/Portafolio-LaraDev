@@ -10,6 +10,7 @@ export const translations = {
     },
     header: {
       cta: 'Contáctame',
+      whatsappMessage: 'Hola Moisés, vi tu portafolio y me gustaría platicar sobre una oportunidad.',
     },
     hero: {
       eyebrow: 'Interfaces, en su mejor ritmo.',
@@ -139,6 +140,8 @@ para entregar soluciones de alta calidad.`,
       heading: 'Contáctame',
       text: '¿Tienes un proyecto que merece llegar al siguiente nivel? Cuéntamelo — construyamos algo increíble juntos.',
       cta: 'Enviar Email',
+      emailSubject: 'Contacto desde tu portafolio',
+      emailBody: 'Hola Moisés, vi tu portafolio y me gustaría platicar sobre una oportunidad.',
     },
     certifications: {
       eyebrow: 'Aprendizaje continuo.',
@@ -230,6 +233,7 @@ para entregar soluciones de alta calidad.`,
     },
     header: {
       cta: 'Contact Me',
+      whatsappMessage: "Hi Moisés, I saw your portfolio and I'd like to talk about an opportunity.",
     },
     hero: {
       eyebrow: 'Interfaces, in their best rhythm.',
@@ -359,6 +363,8 @@ high-quality solutions.`,
       heading: 'Contact Me',
       text: "Got a project that deserves to level up? Tell me about it — let's build something amazing together.",
       cta: 'Send Email',
+      emailSubject: 'Contact from your portfolio',
+      emailBody: "Hi Moisés, I saw your portfolio and I'd like to talk about an opportunity.",
     },
     certifications: {
       eyebrow: 'Always learning.',

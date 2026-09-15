@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
+import { siWhatsapp } from 'simple-icons'
 import { useLanguage } from '../context/LanguageContext'
+import { getWhatsAppLink } from '../utils/contactLinks'
 
 export default function MobileMenu({ links }) {
   const { t } = useLanguage()
@@ -59,10 +61,18 @@ export default function MobileMenu({ links }) {
                 {link.label}
               </Link>
             ))}
-            <Link className="mobile-menu-cta" to="/#contact" onClick={close}>
+            <a
+              className="mobile-menu-cta"
+              href={getWhatsAppLink(t.header.whatsappMessage)}
+              target="_blank"
+              rel="noreferrer"
+              onClick={close}
+            >
+              <svg viewBox="0 0 24 24" className="btn-whatsapp-icon" aria-hidden="true">
+                <path d={siWhatsapp.path} fill="currentColor" />
+              </svg>
               {t.header.cta}
-              <span className="btn-arrow">→</span>
-            </Link>
+            </a>
           </nav>
         </>,
         document.body,

@@ -4,6 +4,7 @@ export const profile = {
   keywords: ['Angular', 'TypeScript', 'AWS'],
   location: 'México',
   email: 'laramoises73@gmail.com',
+  whatsapp: '50239601672',
   skills: [
     'JavaScript (ES6+)',
     'TypeScript',

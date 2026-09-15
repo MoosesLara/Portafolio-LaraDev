@@ -25,6 +25,11 @@ export default function MentorshipContactForm({ onSubmit }) {
       <h3 className="mentorship-contact-form-heading">{t.mentorship.contactFormHeading}</h3>
       <p className="mentorship-contact-form-intro">{t.mentorship.contactFormIntro}</p>
 
+      <div className="mentorship-form-steps">
+        <p>{t.mentorship.contactFormStep1}</p>
+        <p>{t.mentorship.contactFormStep2}</p>
+      </div>
+
       <label className="mentorship-form-field">
         <span>{t.mentorship.contactFormName}</span>
         <input

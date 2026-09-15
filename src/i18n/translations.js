@@ -191,6 +191,9 @@ para entregar soluciones de alta calidad.`,
       contactFormHeading: 'Cuéntame de tu sesión',
       contactFormIntro:
         'Antes de agendar, compárteme estos datos para preparar la charla y darte seguimiento.',
+      contactFormStep1: 'Paso 1: envía tus datos y mensaje por WhatsApp.',
+      contactFormStep2:
+        'Paso 2: después de enviarlo, confirma tu horario en el calendario para que quede agendada tu mentoría.',
       contactFormName: 'Nombre',
       contactFormNamePlaceholder: 'Tu nombre completo',
       contactFormPhone: 'Teléfono',
@@ -437,6 +440,9 @@ high-quality solutions.`,
       contactFormHeading: 'Tell me about your session',
       contactFormIntro:
         "Before you book, share these details so I can prepare and follow up with you.",
+      contactFormStep1: 'Step 1: send your details and message via WhatsApp.',
+      contactFormStep2:
+        'Step 2: after sending it, confirm your time slot on the calendar to lock in your mentorship.',
       contactFormName: 'Name',
       contactFormNamePlaceholder: 'Your full name',
       contactFormPhone: 'Phone',

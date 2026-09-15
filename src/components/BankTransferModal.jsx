@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import { useLanguage } from '../context/LanguageContext'
-import { BANK_ACCOUNTS, BANK_ACCOUNT_HOLDER, SESSION_PRICE_GTQ } from '../data/mentorshipConfig'
+import { BANK_ACCOUNTS, SESSION_PRICE_GTQ } from '../data/mentorshipConfig'
 
 export default function BankTransferModal({ onClose, onConfirm }) {
   const { t } = useLanguage()
@@ -51,7 +51,7 @@ export default function BankTransferModal({ onClose, onConfirm }) {
                 {t.mentorship.transferAccountLabel}: {account.type} {account.number}
               </p>
               <p className="bank-account-detail">
-                {t.mentorship.transferHolderLabel}: {BANK_ACCOUNT_HOLDER}
+                {t.mentorship.transferHolderLabel}: {account.holder}
               </p>
             </div>
           ))}

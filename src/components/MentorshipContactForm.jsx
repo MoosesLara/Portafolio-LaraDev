@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
-import { getMailtoLink } from '../utils/contactLinks'
+import { getWhatsAppLink } from '../utils/contactLinks'
 
 export default function MentorshipContactForm({ onSubmit }) {
   const { t } = useLanguage()
@@ -10,12 +10,13 @@ export default function MentorshipContactForm({ onSubmit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const body = [
+    const message = [
+      t.mentorship.contactFormMessageHeading,
       `${t.mentorship.contactFormName}: ${name}`,
       `${t.mentorship.contactFormPhone}: ${phone}`,
       `${t.mentorship.contactFormTopics}: ${topics}`,
     ].join('\n')
-    window.location.href = getMailtoLink(t.mentorship.contactFormEmailSubject, body)
+    window.open(getWhatsAppLink(message), '_blank', 'noopener,noreferrer')
     onSubmit()
   }
 

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { PAYPAL_CLIENT_ID, GOOGLE_CALENDAR_URL, SESSION_PRICE } from '../data/mentorshipConfig'
 import BankTransferModal from './BankTransferModal'
+import MentorshipContactForm from './MentorshipContactForm'
 
 let paypalSdkPromise = null
 
@@ -62,7 +63,7 @@ export default function MentorshipBooking() {
     }
   }, [status])
 
-  if (status === 'paid') {
+  if (status === 'booking') {
     return isCalendarConfigured ? (
       <div key={status} className="mentorship-calendar-block">
         <p className="mentorship-calendar-label">{t.mentorship.calendarLabel}</p>
@@ -79,6 +80,10 @@ export default function MentorshipBooking() {
         {t.mentorship.calendarNotConfigured}
       </p>
     )
+  }
+
+  if (status === 'paid') {
+    return <MentorshipContactForm key={status} onSubmit={() => setStatus('booking')} />
   }
 
   if (status === 'bank-transfer') {

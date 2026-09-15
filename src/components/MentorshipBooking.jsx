@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { PAYPAL_CLIENT_ID, GOOGLE_CALENDAR_URL, SESSION_PRICE } from '../data/mentorshipConfig'
+import BankTransferModal from './BankTransferModal'
 
 let paypalSdkPromise = null
 
@@ -21,7 +22,8 @@ const isCalendarConfigured = !GOOGLE_CALENDAR_URL.startsWith('REEMPLAZAR')
 
 export default function MentorshipBooking() {
   const { t } = useLanguage()
-  const [status, setStatus] = useState(isPaypalConfigured ? 'idle' : 'not-configured')
+  const [status, setStatus] = useState(isPaypalConfigured ? 'idle' : 'bank-transfer')
+  const [modalOpen, setModalOpen] = useState(false)
   const containerRef = useRef(null)
 
   useEffect(() => {
@@ -75,11 +77,22 @@ export default function MentorshipBooking() {
     )
   }
 
-  if (status === 'not-configured') {
+  if (status === 'bank-transfer') {
     return (
-      <p key={status} className="mentorship-booking-status">
-        {t.mentorship.bookingNotConfigured}
-      </p>
+      <div key={status}>
+        <button type="button" className="btn btn-primary" onClick={() => setModalOpen(true)}>
+          {t.mentorship.transferButton}
+        </button>
+        {modalOpen && (
+          <BankTransferModal
+            onClose={() => setModalOpen(false)}
+            onConfirm={() => {
+              setModalOpen(false)
+              setStatus('paid')
+            }}
+          />
+        )}
+      </div>
     )
   }
 

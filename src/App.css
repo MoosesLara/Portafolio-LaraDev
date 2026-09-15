@@ -1389,6 +1389,88 @@
   box-shadow: var(--shadow);
 }
 
+.bank-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.bank-modal-panel {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.bank-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bank-modal-title {
+  font-size: 20px;
+  color: var(--text-h);
+  margin-bottom: 8px;
+}
+
+.bank-modal-intro {
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.bank-modal-amount {
+  color: var(--text-h);
+  margin-bottom: 24px;
+}
+
+.bank-modal-accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.bank-account-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.bank-account-bank {
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 4px;
+}
+
+.bank-account-detail {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.bank-modal-next {
+  width: 100%;
+}
+
 .testimonials-section {
   padding: 96px clamp(24px, 6vw, 80px);
   background: var(--bg-alt);
@@ -1432,7 +1514,7 @@
 .testimonial-role {
   font-size: 12px;
   color: var(--text);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .footer-copy {

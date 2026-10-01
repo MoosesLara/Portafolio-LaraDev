@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { siWhatsapp } from 'simple-icons'
 import ThemeToggle from './ThemeToggle'
 import LanguageToggle from './LanguageToggle'
+import HalloweenToggle from './HalloweenToggle'
 import MobileMenu from './MobileMenu'
 import { useLanguage } from '../context/LanguageContext'
 import { getWhatsAppLink } from '../utils/contactLinks'
@@ -27,6 +28,7 @@ export default function Header() {
           </span>
           <span className="logo-cursor" aria-hidden="true" />
         </Link>
+        <HalloweenToggle />
       </div>
       <nav className="nav">
         {links.map((link) => (

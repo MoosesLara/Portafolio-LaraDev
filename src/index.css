@@ -96,6 +96,26 @@
   color-scheme: light;
 }
 
+:root[data-halloween='true'] {
+  --accent-1: #b8460b;
+  --accent-2: #7b2cbf;
+  --accent-3: #2d1b4e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light'])[data-halloween='true'] {
+    --accent-1: #ff8c42;
+    --accent-2: #b678ff;
+    --accent-3: #39ff14;
+  }
+}
+
+:root[data-theme='dark'][data-halloween='true'] {
+  --accent-1: #ff8c42;
+  --accent-2: #b678ff;
+  --accent-3: #39ff14;
+}
+
 * {
   box-sizing: border-box;
 }

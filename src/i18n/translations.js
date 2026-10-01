@@ -240,6 +240,10 @@ para entregar soluciones de alta calidad.`,
     languageToggle: {
       label: 'Switch to English',
     },
+    halloweenToggle: {
+      enable: 'Activar tema de Halloween',
+      disable: 'Desactivar tema de Halloween',
+    },
     mobileMenu: {
       open: 'Abrir menú',
       close: 'Cerrar menú',
@@ -483,6 +487,10 @@ high-quality solutions.`,
     },
     languageToggle: {
       label: 'Cambiar a español',
+    },
+    halloweenToggle: {
+      enable: 'Enable Halloween theme',
+      disable: 'Disable Halloween theme',
     },
     mobileMenu: {
       open: 'Open menu',

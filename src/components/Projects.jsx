@@ -24,43 +24,50 @@ function ProjectCard({ project, index, statusLabel }) {
       style={visible ? { animationDelay: `${index * 0.12}s` } : undefined}
       onAnimationEnd={handleAnimationEnd}
     >
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <div className="project-stack">
-        {project.stack.map((tech) => (
-          <span key={tech} className="stack-tag">
-            {tech}
-          </span>
-        ))}
-      </div>
-      <div className="project-links">
-        {project.repo && (
-          <a href={project.repo} target="_blank" rel="noreferrer">
-            {t.projects.code}
-          </a>
-        )}
-        {project.demo && (
-          <a href={project.demo} target="_blank" rel="noreferrer">
-            {t.projects.demo}
-          </a>
-        )}
-        {project.url && (
-          <a href={project.url} target="_blank" rel="noreferrer">
-            {t.projects.visit}
-          </a>
-        )}
-        {statusLabel && (
-          <span className="status-badge">
-            <span className="status-dot" aria-hidden="true" />
-            {statusLabel}
-          </span>
-        )}
+      {project.image && (
+        <div className="project-card-media">
+          <img src={project.image} alt="" loading="lazy" />
+        </div>
+      )}
+      <div className="project-card-body">
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <div className="project-stack">
+          {project.stack.map((tech) => (
+            <span key={tech} className="stack-tag">
+              {tech}
+            </span>
+          ))}
+        </div>
+        <div className="project-links">
+          {project.repo && (
+            <a href={project.repo} target="_blank" rel="noreferrer">
+              {t.projects.code}
+            </a>
+          )}
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noreferrer">
+              {t.projects.demo}
+            </a>
+          )}
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noreferrer">
+              {t.projects.visit}
+            </a>
+          )}
+          {statusLabel && (
+            <span className="status-badge">
+              <span className="status-dot" aria-hidden="true" />
+              {statusLabel}
+            </span>
+          )}
+        </div>
       </div>
     </article>
   )
 }
 
-const SHOW_MY_PROJECTS = false
+const SHOW_MY_PROJECTS = true
 
 export default function Projects() {
   const { t } = useLanguage()

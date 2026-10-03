@@ -1,3 +1,5 @@
+import locker10Image from '../assets/projects/locker10.png'
+
 export const profile = {
   name: 'Moisés Lara',
   role: 'Frontend Engineer',
@@ -47,19 +49,9 @@ export const career = [
 
 export const projects = [
   {
-    stack: ['React', 'Node.js', 'MongoDB'],
-    repo: 'https://github.com/tu-usuario/proyecto-uno',
-    demo: 'https://proyecto-uno.demo.com',
-  },
-  {
-    stack: ['TypeScript', 'Next.js', 'PostgreSQL'],
-    repo: 'https://github.com/tu-usuario/proyecto-dos',
-    demo: 'https://proyecto-dos.demo.com',
-  },
-  {
-    stack: ['JavaScript', 'Express', 'Docker'],
-    repo: 'https://github.com/tu-usuario/proyecto-tres',
-    demo: null,
+    stack: ['HTML5', 'CSS3', 'JavaScript'],
+    url: 'https://mooseslara.github.io/locker10/',
+    image: locker10Image,
   },
 ]
 

@@ -106,19 +106,9 @@ para entregar soluciones de alta calidad.`,
       statusActive: 'Colaboración activa',
       items: [
         {
-          title: 'Proyecto Uno',
+          title: 'Locker 10',
           description:
-            'Descripción breve del proyecto: qué problema resuelve y qué lo hace interesante.',
-        },
-        {
-          title: 'Proyecto Dos',
-          description:
-            'Descripción breve del proyecto: qué problema resuelve y qué lo hace interesante.',
-        },
-        {
-          title: 'Proyecto Tres',
-          description:
-            'Descripción breve del proyecto: qué problema resuelve y qué lo hace interesante.',
+            'Landing page para un gym boutique en Zona 10, Guatemala — pensada para convertir: clase gratis, precios, horarios y programas en una sola página, sin fricciones y con reserva directa por WhatsApp.',
         },
       ],
       collaborations: {
@@ -357,19 +347,9 @@ high-quality solutions.`,
       statusActive: 'Active collaboration',
       items: [
         {
-          title: 'Project One',
+          title: 'Locker 10',
           description:
-            'Short project description: what problem it solves and what makes it interesting.',
-        },
-        {
-          title: 'Project Two',
-          description:
-            'Short project description: what problem it solves and what makes it interesting.',
-        },
-        {
-          title: 'Project Three',
-          description:
-            'Short project description: what problem it solves and what makes it interesting.',
+            'Landing page for a boutique gym in Zona 10, Guatemala — built to convert: free trial class, pricing, schedule, and programs on a single page, with direct WhatsApp booking.',
         },
       ],
       collaborations: {

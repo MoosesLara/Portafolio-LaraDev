@@ -28,12 +28,6 @@ export default function Hero() {
         aria-hidden="true"
         className="halloween-bat halloween-bat-3"
       />
-      <img
-        src={`${import.meta.env.BASE_URL}fondoweb.png`}
-        alt=""
-        aria-hidden="true"
-        className="halloween-ground"
-      />
 
       <p
         className="hero-eyebrow animate__animated animate__fadeInDown"

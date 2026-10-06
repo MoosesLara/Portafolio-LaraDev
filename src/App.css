@@ -727,22 +727,6 @@
   }
 }
 
-.halloween-ground {
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  pointer-events: none;
-}
-
-:root[data-halloween='true'] .halloween-ground {
-  display: block;
-}
-
 .hero-blob {
   position: absolute;
   top: 0;

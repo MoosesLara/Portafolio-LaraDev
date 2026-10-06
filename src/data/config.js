@@ -1,4 +1,5 @@
 import locker10Image from '../assets/projects/locker10.png'
+import luxeEstateImage from '../assets/projects/luxeestate.png'
 
 export const profile = {
   name: 'Moisés Lara',
@@ -52,6 +53,11 @@ export const projects = [
     stack: ['HTML5', 'CSS3', 'JavaScript'],
     url: 'https://mooseslara.github.io/locker10/',
     image: locker10Image,
+  },
+  {
+    stack: ['Next.js', 'React', 'Tailwind CSS'],
+    url: 'https://mooseslara.github.io/LuxeEstate/',
+    image: luxeEstateImage,
   },
 ]
 

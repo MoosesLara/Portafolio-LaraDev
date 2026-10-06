@@ -110,6 +110,11 @@ para entregar soluciones de alta calidad.`,
           description:
             'Landing page para un gym boutique en Zona 10, Guatemala — pensada para convertir: clase gratis, precios, horarios y programas en una sola página, sin fricciones y con reserva directa por WhatsApp.',
         },
+        {
+          title: 'LuxeEstate',
+          description:
+            'Marketplace inmobiliario de lujo con búsqueda por ciudad o zona, filtros por tipo de propiedad y colecciones destacadas de casas, villas y penthouses, con soporte multi-idioma.',
+        },
       ],
       collaborations: {
         items: [
@@ -350,6 +355,11 @@ high-quality solutions.`,
           title: 'Locker 10',
           description:
             'Landing page for a boutique gym in Zona 10, Guatemala — built to convert: free trial class, pricing, schedule, and programs on a single page, with direct WhatsApp booking.',
+        },
+        {
+          title: 'LuxeEstate',
+          description:
+            'Luxury real estate marketplace with city/neighborhood search, property-type filters, and featured collections of houses, villas, and penthouses, with multi-language support.',
         },
       ],
       collaborations: {

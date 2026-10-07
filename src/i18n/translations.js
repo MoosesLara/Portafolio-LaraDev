@@ -115,6 +115,11 @@ para entregar soluciones de alta calidad.`,
           description:
             'Marketplace inmobiliario de lujo con búsqueda por ciudad o zona, filtros por tipo de propiedad y colecciones destacadas de casas, villas y penthouses, con soporte multi-idioma.',
         },
+        {
+          title: 'Clínica Médica',
+          description:
+            'Plataforma integral para la gestión y administración de clínicas médicas, diseñada con una interfaz moderna y fluida para mejorar la experiencia tanto de pacientes como de profesionales de la salud.',
+        },
       ],
       collaborations: {
         items: [
@@ -360,6 +365,11 @@ high-quality solutions.`,
           title: 'LuxeEstate',
           description:
             'Luxury real estate marketplace with city/neighborhood search, property-type filters, and featured collections of houses, villas, and penthouses, with multi-language support.',
+        },
+        {
+          title: 'Medical Clinic',
+          description:
+            'Comprehensive platform for the management and administration of medical clinics, designed with a modern and fluid interface to improve the experience for both patients and healthcare professionals.',
         },
       ],
       collaborations: {

@@ -1,5 +1,6 @@
 import locker10Image from '../assets/projects/locker10.png'
 import luxeEstateImage from '../assets/projects/luxeestate.png'
+import clinicaMedicaImage from '../assets/projects/clinica-medica.PNG'
 
 export const profile = {
   name: 'Moisés Lara',
@@ -58,6 +59,11 @@ export const projects = [
     stack: ['Next.js', 'React', 'Tailwind CSS'],
     url: 'https://mooseslara.github.io/LuxeEstate/',
     image: luxeEstateImage,
+  },
+  {
+    stack: ['React', 'Vite', 'Tailwind CSS'],
+    url: 'https://mooseslara.github.io/clinica-medica/',
+    image: clinicaMedicaImage,
   },
 ]
 
